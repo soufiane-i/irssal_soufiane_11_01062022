@@ -2,7 +2,7 @@ import React from "react";
 import "./DropDown.css"
 
 
-export default function DropDown({title, infos}) {
+export default function DropDown({title, infos, classType}) {
     console.log(typeof(infos));
     let infosDom
     if (typeof(infos) == "string") {
@@ -10,14 +10,16 @@ export default function DropDown({title, infos}) {
     } else {
         infosDom = infos.map(DropDownContent)
     }
+
+    console.log(classType);
     return(
         <>
-          <div className="dropDown" >
+          <div className={`dropDown--${classType}`} >
             <div className="head">
                <span className="headTitle">{title}</span>
                <img className="arrowDropDown arrowOn" src="/assets/arrow.png" onClick={DropDownInteraction}/> 
             </div>
-            <ul className="body">
+            <ul className={`body--${classType}`}>
                  {infosDom} 
             </ul>
           </div>

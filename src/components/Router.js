@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home';
 import Annonce from './pages/Annonce';
 import Error404Page from "./pages/Error404Page";
+import APropos from "./pages/APropos";
 
 
 export default function Router() {
@@ -11,7 +12,8 @@ export default function Router() {
         <>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/Fiche/:id' element={<Annonce/>} />
+                <Route path='/fiche/:id' element={<Annonce/>} />
+                <Route path='/apropos' element={<APropos/>} />
                 <Route path='/*' element={<Error404Page/>} />
             </Routes>
         </>

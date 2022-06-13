@@ -1,4 +1,3 @@
-import React from "react"
 import Header from "../organisms/Header"
 import Banner from "../molecules/Banner"
 import HomeCards from "../organisms/Cards"
@@ -9,7 +8,7 @@ export default function Home() {
         <>
             <Header/>
             <main>
-                <Banner text="Chez vous, partout et ailleurs"/>
+                <Banner text="Chez vous, partout et ailleurs" img="mainHeaderBg"/>
                 <HomeCards/>
             </main>
             <Footer/>

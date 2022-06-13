@@ -1,6 +1,12 @@
-.dropDown {
-    width: 41vw;
+.dropDown--apropos, .dropDown--logement {
     margin-bottom: 30px;
+}
+.dropDown--logement {
+    width: 41vw;
+}
+
+.dropDown--apropos {
+    width: 100%;
 }
 .head {
     display: flex;
@@ -11,7 +17,7 @@
     padding: 15px 20px;
     text-align: left;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .arrowDropDown {
@@ -28,8 +34,7 @@
     transform: rotate(0deg);
 }
 
-.body {
-    height: 200px;
+.body--apropos, .body--logement {
     margin: 0;
     padding: 20px;
     background-color: #F6F6F6;
@@ -38,6 +43,22 @@
     z-index: -1;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    transform-origin: top;
+    animation-name: DropDownAnim;
+    animation-duration: 0.20s;
+  
+    animation-fill-mode: forwards;
+}
+
+.body--logement {
+    height: 200px;
+    font-size: 20px;
+
+}
+
+.body--apropos {
+    height: auto;
+    font-size: 24px;
 }
 
 .dropDownContent {
@@ -46,13 +67,28 @@
     padding: 0;
 }
 
+li {
+    color: #FF6060;
+    
+}
+
 
 @media screen and (max-width: 768px) {
-    .dropDown {
+    .dropDown--logement {
        width: 100%;
     }
 
     li{
         font-size: 14px;
+    }
+}
+
+@keyframes DropDownAnim {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
     }
 }
