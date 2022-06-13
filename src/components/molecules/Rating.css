@@ -1,0 +1,17 @@
+.star {
+    margin: 0 5px;
+    color: lightgray;
+}
+
+
+.starOn {
+    color: #FF6060;
+}
+
+
+@media screen and (max-width: 768px) {
+    .star {
+       transform: scale(0.8);
+       margin: 0;
+    }
+}

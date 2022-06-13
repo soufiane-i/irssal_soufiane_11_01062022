@@ -1,0 +1,31 @@
+.arrows {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.arrow {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+.leftArrow {
+    transform: rotate(90deg);
+    left: 5px;
+}
+
+.rightArrow {
+    transform: rotate(-90deg);
+    right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .arrow {
+        width: 20px;
+    }
+
+}

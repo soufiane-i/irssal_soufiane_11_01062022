@@ -1,0 +1,10 @@
+.link {
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }

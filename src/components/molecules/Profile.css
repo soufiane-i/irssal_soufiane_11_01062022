@@ -1,0 +1,37 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #FF6060;
+}
+
+.hostPicture {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hostPicture {
+        width: 40px;
+    }
+    
+    .name {
+        font-size: 14px;
+        line-height: 1.3rem;
+    }
+}
