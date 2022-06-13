@@ -12,10 +12,10 @@ export default function DropDown({title, infos}) {
     }
     return(
         <>
-          <div className="dropDown">
+          <div className="dropDown" >
             <div className="head">
                <span className="headTitle">{title}</span>
-               <img className="arrow" src="/assets/arrow.png"/> 
+               <img className="arrowDropDown arrowOn" src="/assets/arrow.png" onClick={DropDownInteraction}/> 
             </div>
             <ul className="body">
                  {infosDom} 
@@ -31,4 +31,24 @@ function DropDownContent(info) {
             <li className="dropDownContent">{info}</li>
         </>
     )
+}
+
+
+
+function DropDownInteraction(e) {
+    const arrow = e.target
+    const body = e.target.parentNode.parentNode.childNodes[1]
+
+    console.log(arrow);
+
+    if (arrow.classList.contains('arrowOn')) {
+        arrow.classList.toggle('arrowOn')
+        arrow.classList.toggle('arrowOff')
+        body.classList.add('off')
+    } else {
+        arrow.classList.toggle('arrowOn')
+        arrow.classList.toggle('arrowOff')
+        body.classList.remove('off')
+    }
+
 }

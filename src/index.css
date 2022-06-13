@@ -13,14 +13,15 @@ code {
     monospace;
 }
 
-.App {
+main {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 100px;
 }
 
-@media screen and (max-width: 768px) {
-  .App {
-    width: 90%;
-  }
+
+
+
+.off {
+  display: none;
 }

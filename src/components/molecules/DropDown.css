@@ -1,5 +1,6 @@
 .dropDown {
     width: 41vw;
+    margin-bottom: 30px;
 }
 .head {
     display: flex;
@@ -13,22 +14,45 @@
     font-size: 20px;
 }
 
-.arrow {
+.arrowDropDown {
     width: 20px;
     height: 10px;
+    cursor: pointer;
+}
+
+.arrowOff {
+    transform: rotate(180deg);
+}
+
+.arrowOn {
+    transform: rotate(0deg);
 }
 
 .body {
+    height: 200px;
     margin: 0;
     padding: 20px;
     background-color: #F6F6F6;
     transform: translateY(-5px);
     position: relative;
     z-index: -1;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .dropDownContent {
     list-style: none;
     text-align: left;
     padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .dropDown {
+       width: 100%;
+    }
+
+    li{
+        font-size: 14px;
+    }
 }
