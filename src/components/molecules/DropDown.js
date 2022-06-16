@@ -3,18 +3,17 @@ import "./DropDown.css"
 
 
 export default function DropDown({title, infos, classType}) {
-    console.log(typeof(infos));
     let infosDom
     if (typeof(infos) == "string") {
         infosDom = <li className="dropDownContent">{infos}</li>           
     } else {
-        infosDom = infos.map(DropDownContent)
+        infosDom = infos.map((info) => 
+        <li className="dropDownContent" key={info}>{info}</li>)
     }
 
-    console.log(classType);
     return(
         <>
-          <div className={`dropDown--${classType}`} >
+          <div className={`dropDown--${classType}`}>
             <div className="head">
                <span className="headTitle">{title}</span>
                <img className="arrowDropDown arrowOn" src="/assets/arrow.png" alt="arrow" onClick={DropDownInteraction}/> 
@@ -27,21 +26,10 @@ export default function DropDown({title, infos, classType}) {
     )
 }
 
-function DropDownContent(info) {
-    return(
-        <>
-            <li className="dropDownContent">{info}</li>
-        </>
-    )
-}
-
-
 
 function DropDownInteraction(e) {
     const arrow = e.target
     const body = e.target.parentNode.parentNode.childNodes[1]
-
-    console.log(arrow);
 
     if (arrow.classList.contains('arrowOn')) {
         arrow.classList.toggle('arrowOn')

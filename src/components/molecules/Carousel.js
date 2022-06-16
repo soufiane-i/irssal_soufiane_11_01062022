@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Carousel.css"
-import CarouselPicture from "../atoms/CarouselPicture.js";
 import Arrows from "./Arrows";
 
 
@@ -22,7 +21,9 @@ export default function Carousel({pictures}) {
         <>
             <div className="carousel">
                 <div className="carouselContainer">
-                    { pictures.map(CarouselPicture) }
+                    { pictures.map((picture) =>
+                        <img src={`${picture}`} className="photo off" alt="carousel" key={picture}/>
+                    ) }
                 </div>
                 <Arrows/>
             </div>
