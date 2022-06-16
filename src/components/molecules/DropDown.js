@@ -17,7 +17,7 @@ export default function DropDown({title, infos, classType}) {
           <div className={`dropDown--${classType}`} >
             <div className="head">
                <span className="headTitle">{title}</span>
-               <img className="arrowDropDown arrowOn" src="/assets/arrow.png" onClick={DropDownInteraction}/> 
+               <img className="arrowDropDown arrowOn" src="/assets/arrow.png" alt="arrow" onClick={DropDownInteraction}/> 
             </div>
             <ul className={`body--${classType}`}>
                  {infosDom} 

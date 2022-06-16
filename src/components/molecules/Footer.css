@@ -1,4 +1,4 @@
-.footer {
+footer {
     width: 100%;
     background-color: black;
     display: flex;
@@ -12,3 +12,8 @@
 .img {
     margin: 20px 0;
 }
+
+footer p {
+    cursor: default;
+}
+

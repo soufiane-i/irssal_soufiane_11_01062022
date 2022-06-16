@@ -1,5 +1,4 @@
 import React from "react";
-import style from "./PageLink.css"
 
 export default function PageLink({text, link}) {
     return (

@@ -4,8 +4,8 @@ export default function Arrows() {
     return (
       <>
         <div className="arrows">
-            <img className="arrow leftArrow" src={"/assets/arrow.png"} onClick={prevImg}/>
-            <img className="arrow rightArrow" src={"/assets/arrow.png"} onClick={nextImg}/>
+            <img className="arrow leftArrow" src={"/assets/arrow.png"} alt="arrow" onClick={prevImg}/>
+            <img className="arrow rightArrow" src={"/assets/arrow.png"} alt="arrow" onClick={nextImg}/>
         </div>
       </>
     )

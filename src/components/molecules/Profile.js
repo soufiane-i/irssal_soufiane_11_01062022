@@ -10,7 +10,7 @@ export default function Profile({host}) {
                     <span className="name">{firstName}</span>
                     <span className="name">{lastName}</span>
                 </div>
-                <img className="hostPicture" src={host.picture}/>
+                <img className="hostPicture" src={host.picture} alt="host"/>
             </div>
         </>
     )
