@@ -1,10 +1,10 @@
 import React from "react";
 import {Routes, Route, BrowserRouter} from 'react-router-dom' 
 
-import Home from './pages/Home';
-import Annonce from './pages/Annonce';
-import Error404Page from "./pages/Error404Page";
-import APropos from "./pages/APropos";
+import Home from './components/pages/Home';
+import Annonce from './components/pages/Annonce';
+import Error404Page from "./components/pages/Error404Page";
+import APropos from "./components/pages/APropos";
 
 
 export default function Router() {
