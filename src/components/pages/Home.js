@@ -1,6 +1,6 @@
 import Header from "../organisms/Header"
 import Banner from "../molecules/Banner"
-import HomeCards from "../organisms/Cards"
+import Cards from "../organisms/Cards"
 import Footer from "../molecules/Footer"
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
             <Header/>
             <main>
                 <Banner text="Chez vous, partout et ailleurs" img="mainHeaderBg"/>
-                <HomeCards/>
+                <Cards/>
             </main>
             <Footer/>
         </>

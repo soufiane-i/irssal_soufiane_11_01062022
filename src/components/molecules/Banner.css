@@ -1,9 +1,9 @@
 .banner {
-    height: 200px;
+    height: 250px;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .banner img {
