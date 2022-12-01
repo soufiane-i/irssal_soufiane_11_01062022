@@ -3,4 +3,4 @@
 ## Installation
 - Download
 - `npm install` or `yarn` to install modules
-- `npm run start` or `yarn start` to run the project
+- `npm start` or `yarn start` to run the project
