@@ -1,3 +1,6 @@
-# irssal_soufiane_11_01062022
+# OpenClassrooms - Projet 11 - Développez une application Web avec React et React Router
 
-Fichier Router dans le dossier src
+## Installation
+- Download
+- `npm install` or `yarn` to install modules
+- `npm run start` or `yarn start` to run the project
